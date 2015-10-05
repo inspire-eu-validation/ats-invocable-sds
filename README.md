@@ -23,7 +23,7 @@ Based on requirement numbering in [TG SDS](#ref_TG_SDS).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| 1      | Use the category element for classification | [A.01.IR01.SDS.SV_ServiceIdentification](A.01.IR01.SDS.SV_ServiceIdentification.md) | |
+| 1      | Use the category element for classification | [A.01.IR01.SDS.SV_ServiceIdentification](A.01.IR01.SDS.SV_ServiceIdentification.md) OR [A.04.IR01.DQ_DomainConsistency.report.for.classification](A.04.IR01.DQ_DomainConsistency.report.for.classification.md)| |
 | 2      | All access points via Resource Locator | [A.02.IR02.IR03.at.least.one.recource.locator](A.02.IR02.at.least.one.recource.locator.md) | |
 | 3      | CI_OnlineFunctionCode to identify access points | [A.02.IR02.IR03.at.least.one.recource.locator](A.02.IR02.at.least.one.recource.locator.md)| |
 | 4      | Specification as human and/or machine readable | not automatically testable | |
