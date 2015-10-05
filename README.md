@@ -23,20 +23,33 @@ Based on requirement numbering in [TG SDS](#ref_TG_SDS).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| 1      | Use the category element for classification | | |
-| 2      | All access points via Resource Locator | | |
-| 3      | CI_OnlineFunctionCode to identify access points | | |
-| 4      | Specification as human and/or machine readable | | |
-| 5      | Specification citing SDS must be given | | |
+| 1      | Use the category element for classification | [A.01.IR01.SDS.SV_ServiceIdentification](A.01.IR01.SDS.SV_ServiceIdentification.md) | |
+| 2      | All access points via Resource Locator | [A.02.IR02.IR03.at.least.one.recource.locator](A.02.IR02.at.least.one.recource.locator.md) | |
+| 3      | CI_OnlineFunctionCode to identify access points | [A.02.IR02.IR03.at.least.one.recource.locator](A.02.IR02.at.least.one.recource.locator.md)| |
+| 4      | Specification as human and/or machine readable | not automatically testable | |
+| 5      | Specification citing SDS must be given | [A.03.IR05.SDS.specification.cited](A.03.IR05.SDS.specification.cited.md) | |
 
 
 ## Tests
 
-The ATS for the  "TG Conformance Class 1: Implementation of Invocable Spatial Data Services" contains the following tests:
+The ATS for the "TG Conformance Class 1: Implementation of Invocable Spatial Data Services" contains the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
+| [A.01.IR01.SDS.SV_ServiceIdentification](A.01.IR01.SDS.SV_ServiceIdentification.md) | missing |
+| [A.02.IR02.IR03.at.least.one.recource.locator](A.02.IR02.at.least.one.recource.locator.md) | missing |
+| [A.03.IR05.SDS.specification.cited](A.03.IR05.SDS.specification.cited.md) | missing |
 
+## Tests (MIWP-8 alternative)
+
+The ATS for the "TG Conformance Class 1: Implementation of Invocable Spatial Data Services" according to the
+alternative option for SDS classification proposed by MIWP-8, contains the following tests:
+
+| Identifier                                                        | Status   |
+| ----------------------------------------------------------------- | -------- |
+| [A.04.IR01.DQ_DomainConsistency.report.for.classification](A.04.IR01.DQ_DomainConsistency.report.for.classification.md) | missing |
+| [A.02.IR02.IR03.at.least.one.recource.locator](A.02.IR02.at.least.one.recource.locator.md) | missing |
+| [A.03.IR05.SDS.specification.cited](A.03.IR05.SDS.specification.cited.md) | missing |
 
 ## XML namespace prefixes <a name="namespaces"></a>
 
