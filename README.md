@@ -56,6 +56,9 @@ alternative option for SDS classification proposed by MIWP-8, contains the follo
 
 * The XML Schema for the inspire_sds_gmd has not been published yet, so the XML Schema validation is not possible.
 * The codelist URL ```http://inspire.ec.europa.eu/draft-schemas/resources/Codelist/gmxCodelist.xml#INSPIRE_CI_OnLineFunctionCode``` does not look like a final one (refers to a non-existing resource under draft-schemas).The codelists and their value should point to the INSPIRE registry.
+* The test [A.03.IR05.SDS.specification.cited](A.03.IR05.SDS.specification.cited.md) cannot be automated unless either
+  * the IR 5 is changed into requiring a ```xlink:href``` attribute to be used in ```gmd:specification``` to refer to specific version of [TG SDS](#ref_TG_SDS), or
+  * the acceptable (localized) ```gco:CharacterString``` contents of the ```gmd:title``` pointing to the [TG SDS](#ref_TG_SDS) are explicitly defined.
 
 ## XML namespace prefixes <a name="namespaces"></a>
 
