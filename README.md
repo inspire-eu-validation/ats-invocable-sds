@@ -4,7 +4,7 @@ ats-invocable-sds
 Abstract Test Suite for "Invocable Spatial Data Services"
 as defined in the Technical Guidance for INSPIRE Spatial Data Services and services allowing spatial data services to be invoked.
 
-*Note*: This ATS is in draft stage, none of the tests have an official INSPIRE MIG approval.
+*Note*: This ATS is in Ready for review stage, none of the tests have an official INSPIRE MIG approval.
 
 ## External document references
 
@@ -16,6 +16,7 @@ as defined in the Technical Guidance for INSPIRE Spatial Data Services and servi
 | IR NS <a name="ref_IR_NS"></a>   | [Commission Regulation (EC) No 976/2009 of 19 October 2009 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards the Network Services](http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32009R0976&from=EN)
 | IR NS AMD <a name="ref_IR_NS_AMD"></a> | [Commission Regulation (EU) No 1311/2014 of 10 December 2014 amending Regulation (EC) No 976/2009 as regards the definition of an INSPIRE metadata element](http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014R1311&from=EN)
 | TG SDS <a name="ref_TG_SDS"></a> | [Technical Guidance for INSPIRE Spatial Data Services and services allowing spatial data services to be invoked](http://inspire.jrc.ec.europa.eu/documents/Spatial_Data_Services/TG_for_INSPIRE_SDS_3_1.pdf)
+| SDS ALT <a name="ref_sds_alt"></a> | Alternative approaches to implement Metadata for Spatial data services (not published?)
 
 ## TG Requirement coverage
 
@@ -36,9 +37,9 @@ The ATS for the "TG Conformance Class 1: Implementation of Invocable Spatial Dat
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [A.01.IR01.SDS.SV_ServiceIdentification](A.01.IR01.SDS.SV_ServiceIdentification.md) | missing |
-| [A.02.IR02.IR03.at.least.one.recource.locator](A.02.IR02.at.least.one.recource.locator.md) | missing |
-| [A.03.IR05.SDS.specification.cited](A.03.IR05.SDS.specification.cited.md) | missing |
+| [A.01.IR01.SDS.SV_ServiceIdentification](A.01.IR01.SDS.SV_ServiceIdentification.md) | ready for review |
+| [A.02.IR02.IR03.at.least.one.recource.locator](A.02.IR02.at.least.one.recource.locator.md) | ready for review |
+| [A.03.IR05.SDS.specification.cited](A.03.IR05.SDS.specification.cited.md) | ready for review |
 
 ## Tests (MIWP-8 alternative)
 
@@ -47,9 +48,14 @@ alternative option for SDS classification proposed by MIWP-8, contains the follo
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [A.04.IR01.DQ_DomainConsistency.report.for.classification](A.04.IR01.DQ_DomainConsistency.report.for.classification.md) | missing |
-| [A.02.IR02.IR03.at.least.one.recource.locator](A.02.IR02.at.least.one.recource.locator.md) | missing |
-| [A.03.IR05.SDS.specification.cited](A.03.IR05.SDS.specification.cited.md) | missing |
+| [A.04.IR01.DQ_DomainConsistency.report.for.classification](A.04.IR01.DQ_DomainConsistency.report.for.classification.md) | ready for review |
+| [A.02.IR02.IR03.at.least.one.recource.locator](A.02.IR02.at.least.one.recource.locator.md) | ready for review |
+| [A.03.IR05.SDS.specification.cited](A.03.IR05.SDS.specification.cited.md) | ready for review |
+
+## Open issues
+
+* The XML Schema for the inspire_sds_gmd has not been published yet, so the XML Schema validation is not possible.
+* The codelist URL ```http://inspire.ec.europa.eu/draft-schemas/resources/Codelist/gmxCodelist.xml#INSPIRE_CI_OnLineFunctionCode``` does not look like a final one (refers to a non-existing resource under draft-schemas).The codelists and their value should point to the INSPIRE registry.
 
 ## XML namespace prefixes <a name="namespaces"></a>
 
@@ -58,8 +64,6 @@ The following prefixes are used to refer to the corresponding XML namespaces in 
 Prefix         | Namespace
 -------------- | -------------------------------------------------
 gmd | http://www.isotc211.org/2005/gmd
-gml | http://www.opengis.net/gml/3.2
-inspire\_common| http://inspire.ec.europa.eu/schemas/common/1.0
-inspire\_dls   | http://inspire.ec.europa.eu/schemas/inspire_dls/1.0
-ows | http://www.opengis.net/ows/1.1
+srv | http://www.isotc211.org/2005/srv
+inspire\_sds_gmd | [missing]
 xlink          | http://www.w3.org/1999/xlink
