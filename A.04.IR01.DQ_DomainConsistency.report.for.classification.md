@@ -13,7 +13,7 @@ discover if a Spatial Data Service is classified as ```invocable```, ```interope
 
 **Reference(s)**
 
-* [SDS ALT](README.md#ref_SDS ALT), Example of XML encoding Category
+* [SDS ALT](README.md#ref_SDS_ALT), Example of XML encoding Category
 
 **Test type**: Automated
 
