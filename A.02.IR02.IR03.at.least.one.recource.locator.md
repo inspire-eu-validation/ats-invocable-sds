@@ -1,4 +1,4 @@
-# A.02.IR02.at.least.one.recource.locator
+# A.02.IR02.IR03.at.least.one.recource.locator
 
 **Purpose**: It should be possible to automatically discover the access points of an invocable SDS using it's metadata record.
 
@@ -8,7 +8,7 @@
 
 **Test method**
 
-Check that at least one [distribution online resource](#dist_online_resource) exists in the service metadata record. If so, pass the test. Otherwise fail the test.
+Check that at least one [Access point URL](#access_point_url) is found in the service metadata record. If so, pass the test. Otherwise fail the test.
 
 **Reference(s)**
 
@@ -16,12 +16,10 @@ Check that at least one [distribution online resource](#dist_online_resource) ex
 
 **Test type**: Automated
 
-**Notes**
-
 ## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](README.md#namespaces).
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-distribution online resource <a name="dist_online_resource"></a> | /gmd:MD\_Metadata/gmd:distributionInfo/gmd:MD\_Distribution/gmd:transferOptions/gmd:MD\_DigitalTransferOptions/gmd:onLine/gmd:CI\_OnlineResource/gmd:linkage/gmd:URL
+Access point URL <a name="access_point_url"></a> | /gmd:MD\_Metadata/gmd:distributionInfo/gmd:MD\_Distribution/gmd:transferOptions/gmd:MD\_DigitalTransferOptions/gmd:onLine/gmd:CI\_OnlineResource[child::gmd:linkage/gmd:URL and child::gmd:function/gmd:CI\_OnLineFunctionCode[@codeList='http://inspire.ec.europa.eu/draft-schemas/resources/Codelist/gmxCodelist.xml#INSPIRE_CI_OnLineFunctionCode' and (@codeListValue='accessPoint-selfDescribing' or @codeListValue='accessPoint')]]/gmd:linkage/gmd:URL
