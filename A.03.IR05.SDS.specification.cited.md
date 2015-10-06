@@ -1,6 +1,6 @@
 # A.03.IR05.SDS.specification.cited
 
-**Purpose**:
+**Purpose**: The TG SDS need to be cited as the specification that the compliant SDS declares to be compliant with.
 
 **Prerequisites**
 
@@ -8,13 +8,16 @@
 
 **Test method**
 
-Check that at least one [Access point URL](#access_point_url) is found in the service metadata record. If so, pass the test. Otherwise fail the test.
+Check if at least one of the [specification citation elements](#specification_citation) refer to the INSPIRE TG SDS. If yes, pass the test. Otherwise fail the test.
 
 **Reference(s)**
 
-* [TG SDS](README.md#ref_TG_SDS), section 4.5.2
+* [TG SDS](README.md#ref_TG_SDS), section 4.5.3.1
 
-**Test type**: Automated
+**Test type**: Manual (for now)
+
+**Notes**
+* This requirements would be much easier to validate if the ```gmd:specification``` would be mandated to contain a link to the specific TG SDS version, like in test [A.04.IR01.DQ_DomainConsistency.report.for.classification](A.04.IR01.DQ_DomainConsistency.report.for.classification.md). The current IR 5 in TG SDS does not explicate the acceptable values for the ```gmd:title``` element, and thus automatic testing becomes impossible.
 
 ## Contextual XPath references
 
@@ -22,4 +25,4 @@ The namespace prefixes used as described in [README.md](README.md#namespaces).
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-Access point URL <a name="access_point_url"></a> | /gmd:MD\_Metadata/gmd:distributionInfo/gmd:MD\_Distribution/gmd:transferOptions/gmd:MD\_DigitalTransferOptions/gmd:onLine/gmd:CI\_OnlineResource[child::gmd:linkage/gmd:URL and child::gmd:function/gmd:CI\_OnLineFunctionCode[@codeList='http://inspire.ec.europa.eu/draft-schemas/resources/Codelist/gmxCodelist.xml#INSPIRE_CI_OnLineFunctionCode' and (@codeListValue='accessPoint-selfDescribing' or @codeListValue='accessPoint')]]/gmd:linkage/gmd:URL
+specification citation elements <a name="specification_citation"></a> | /gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult/gmd:specification/gmd:CI_Citation/gmd:title/gco:CharacterString
