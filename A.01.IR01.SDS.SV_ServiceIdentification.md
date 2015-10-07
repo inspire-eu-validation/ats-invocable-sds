@@ -6,6 +6,7 @@ discover if a Spatial Data Service is classified as ```invocable```, ```interope
 **Prerequisites**
 
 * The metadata record for the service needs to pass as a valid ISO 19139 metadata record (schema validation) including both ```gmd``` and the ```srv``` schemas (see [namespaces](README.md#namespaces)).
+* The metadata record for the service needs to pass as a valid XML document against the INSPIRE SDS extended metadata XML Schema (inspire\_sds\_gmd).
 
 **Test method**
 
