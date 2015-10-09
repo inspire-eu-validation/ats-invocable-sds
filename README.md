@@ -13,6 +13,8 @@ as defined in the Technical Guidance for INSPIRE Spatial Data Services and servi
 | INSPIRE <a name="ref_INSPIRE"></a> | [Directive 2007/2/EC of the European Parliament and of the Council of 14 March 2007 establishing an Infrastructure for Spatial Information in the European Community (INSPIRE)](http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32007L0002&from=EN)
 | INT SDS <a name="ref_INT_SDS"></a> | [Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services](http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2010:323:FULL&from=EN)
 | INT SDS AMD <a name="ref_INT_SDS_AMD"></a> | [Commission Regulation (EU) No 1312/2014 of 10 December 2014 amending Regulation (EU) No 1089/2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data services](http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014R1312&from=EN)
+| IR MD <a name="ref_IR_MD"></a>  | [COMMISSION REGULATION (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:326:0012:0030:EN:PDF)
+| TG MD <a name="ref_TG_MD"></a> | [INSPIRE Metadata Technical Guidance version 1.3](http://inspire.jrc.ec.europa.eu/documents/Metadata/MD_IR_and_ISO_20131029.pdf)
 | IR NS <a name="ref_IR_NS"></a>   | [Commission Regulation (EC) No 976/2009 of 19 October 2009 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards the Network Services](http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32009R0976&from=EN)
 | IR NS AMD <a name="ref_IR_NS_AMD"></a> | [Commission Regulation (EU) No 1311/2014 of 10 December 2014 amending Regulation (EC) No 976/2009 as regards the definition of an INSPIRE metadata element](http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014R1311&from=EN)
 | TG SDS <a name="ref_TG_SDS"></a> | [Technical Guidance for INSPIRE Spatial Data Services and services allowing spatial data services to be invoked](http://inspire.jrc.ec.europa.eu/documents/Spatial_Data_Services/TG_for_INSPIRE_SDS_3_1.pdf)
@@ -30,10 +32,9 @@ Based on requirement numbering in [TG SDS](#ref_TG_SDS).
 | 4      | Specification as human and/or machine readable | not automatically testable | |
 | 5      | Specification citing SDS must be given | [A.03.IR05.SDS.specification.cited](A.03.IR05.SDS.specification.cited.md) | |
 
-
 ## Tests
 
-The ATS for the "TG Conformance Class 1: Implementation of Invocable Spatial Data Services" contains the following tests:
+The ATS for the "TG Conformance Class 1: Implementation of Invocable Spatial Data Services" contains all the tests in [ATS Metadata](https://github.com/inspire-eu-validation/ats-metadata) applicable to INSPIRE services, and additionally the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
@@ -43,8 +44,7 @@ The ATS for the "TG Conformance Class 1: Implementation of Invocable Spatial Dat
 
 ## Tests (MIWP-8 alternative)
 
-The ATS for the "TG Conformance Class 1: Implementation of Invocable Spatial Data Services" according to the
-alternative option for SDS classification proposed by MIWP-8, contains the following tests:
+The ATS for the "TG Conformance Class 1: Implementation of Invocable Spatial Data Services" according to the alternative option for SDS classification proposed by MIWP-8, contains all the tests in [ATS Metadata](https://github.com/inspire-eu-validation/ats-metadata) applicable to INSPIRE services, and additionally the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
@@ -53,7 +53,7 @@ alternative option for SDS classification proposed by MIWP-8, contains the follo
 | [A.03.IR05.SDS.specification.cited](A.03.IR05.SDS.specification.cited.md) | ready for review |
 
 ## Open issues
-
+* There are no explicit requirements for Discoverable SDSes to comply with the requirements of [TG MD](#ref_TG_MD), even though it is mentioned at the end of text in chapter 4.2 "Metadata elements table" that "the metadata elements already detailed in [INS MD TG] are not repeated in this TG."
 * The XML Schema for the inspire_sds_gmd has not been published yet, so the XML Schema validation is not possible.
 * The codelist URL ```http://inspire.ec.europa.eu/draft-schemas/resources/Codelist/gmxCodelist.xml#INSPIRE_CI_OnLineFunctionCode``` does not look like a final one (refers to a non-existing resource under draft-schemas).The codelists and their value should point to the INSPIRE registry.
 * The test [A.03.IR05.SDS.specification.cited](A.03.IR05.SDS.specification.cited.md) cannot be automated unless either
