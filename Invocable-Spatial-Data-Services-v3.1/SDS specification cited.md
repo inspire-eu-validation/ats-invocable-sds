@@ -1,4 +1,4 @@
-# A.03.IR05.SDS.specification.cited
+# SDS specification cited
 
 **Purpose**: The TG SDS needs to be cited as the specification that the compliant SDS declares to be compliant with.
 

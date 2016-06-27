@@ -1,4 +1,4 @@
-# A.04.IR16.IR17.link.to.get.harmonised.service.metadata
+# Link to get harmonised service metadata
 
 **Purpose**: Access point for retrieving technical Capabilities of a harmonised SDS should be discoverable via it's metadata description.
 

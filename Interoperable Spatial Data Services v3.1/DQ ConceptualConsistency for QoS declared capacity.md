@@ -1,4 +1,4 @@
-# A.08.IR10.DQ_ConceptualConsistency.for.QoS.declared.capacity
+# DQ ConceptualConsistency for QoS declared capacity
 
 **Purpose**: Declared Quality of Service level helps the users to rule out services tha do not fulfill their required QoS criteria.
 

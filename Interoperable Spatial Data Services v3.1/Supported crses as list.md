@@ -1,4 +1,4 @@
-# A.01.IR06.IR07.supported.crses.as.list
+# Supported crses as list
 
 **Purpose**: For interoperability reasons, if appropriate for the offered datasets, the INSPIRE SDS should provide their data using a subset of the well-known
 2D and 3D coordinate reference systems listed in Annex II.1 of [INT SDS](#README.md#ref_INT SDS). The list of the
@@ -17,7 +17,7 @@ supported CRSes for a service shall be given as a list in the service metadata r
 * [TG SDS](README.md#ref_TG_SDS), 4.6.1
 * [INT SDS](README.md#ref_INT_SDS), Annex II, 1. Coordinate reference systems
 * [DS CRS](README.md#ref_DS_CRS)
-* [IR MD](README.md#ref_IR_MD), Annex II, 1.3.4 Other Coordinate Systems
+
 
 **Test type**: Automated
 

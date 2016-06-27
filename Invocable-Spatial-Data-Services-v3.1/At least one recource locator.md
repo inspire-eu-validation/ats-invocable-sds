@@ -1,4 +1,4 @@
-# A.02.IR02.IR03.at.least.one.recource.locator
+# At least one recource locator
 
 **Purpose**: It should be possible to automatically discover the access points of an invocable SDS using it's metadata record.
 

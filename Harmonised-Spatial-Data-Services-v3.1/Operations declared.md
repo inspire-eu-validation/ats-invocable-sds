@@ -1,4 +1,4 @@
-# A.03.IR15.operations.declared
+# Operations declared
 
 **Purpose**: A harmonised spatial data service shall have well documented
 interfaces and list the end points for each operation to enable machine to machine communication.

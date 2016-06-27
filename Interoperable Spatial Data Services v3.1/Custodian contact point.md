@@ -1,4 +1,4 @@
-# A.05.IR11.custodian.contact.point
+# Custodian contact point
 
 **Purpose**: The party responsible for the care and maintenance of the service needs to be discoverable both for evaluating the reliability of the service and for reporting the possible technical or interoperability issues.
 

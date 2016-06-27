@@ -1,4 +1,4 @@
-# A.04.IR01.DQ_DomainConsistency.report.for.classification
+# DQ DomainConsistency report for classification
 
 **Purpose**: To find services fit to be consumed by given client applications, it's necessary to be able to
 discover if a Spatial Data Service is classified as ```invocable```, ```interoperable``` or ```harmonised```.
