@@ -27,9 +27,9 @@ Based on requirement numbering in [TG SDS](#ref_TG_SDS).
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
 | 13     | Encoding follows [ISO 19118](#ref_ISO_19118) | content validation* | |
 | 14     | Encoding follows [INT SDS](#ref_INT_SDS) annexes | content validation* | |
-| 15     | Describe operations in the metadata | [Operations declared](Operations declared.md) | |
-| 16     | Provide "Get Harmonised Spatial Data Service Metadata" operation |[Link to get harmonised service metadata]([Link to get harmonised service metadata.md) | |
-| 17     | Link to the "Get Harmonised Spatial Data Service Metadata" operation |[Link to get harmonised service metadata]([Link to get harmonised service metadata.md) | |
+| 15     | Describe operations in the metadata | [Operations declared](operations-declared.md) | |
+| 16     | Provide "Get Harmonised Spatial Data Service Metadata" operation |[Link to get harmonised service metadata]([link to get harmonised service metadata.md) | |
+| 17     | Link to the "Get Harmonised Spatial Data Service Metadata" operation |[Link to get harmonised service metadata]([link to get harmonised service metadata.md) | |
 | 18     | SDS Metadata shall follow the INSPIRE SDS XML Schema | not automatically testable** | |
 
 \*) *Validation of these aspects fall under data model content validation for the INSPIRE datasets*.
@@ -43,9 +43,9 @@ The CC for the "TG Conformance Class 3: Implementation of Spatial Data Services 
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [SDS SV ServiceIdentification](SDS SV ServiceIdentification.md) | ready for review |
-| [Operations declared](Operations declared.md) | ready for review |
-| [Link to get harmonised service metadata]([Link to get harmonised service metadata.md) | ready for review |
+| [SDS SV ServiceIdentification](sds-sv-serviceidentification.md) | ready for review |
+| [Operations declared](operations-declared.md) | ready for review |
+| [Link to get harmonised service metadata]([link to get harmonised service metadata.md) | ready for review |
 
 ## Tests (MIWP-8 alternative)
 
@@ -55,9 +55,9 @@ in the [CC Invocable SDS](inspire.ec.europa.eu/id/ats/spatial-data-services/3.1/
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [DQ DomainConsistency report for classification](DQ DomainConsistency report for classification.md) | ready for review |
-| [Operations declared](Operations declared.md) | ready for review |
-| [Link to get harmonised service metadata]([Link to get harmonised service metadata.md) | ready for review |
+| [DQ DomainConsistency report for classification](dq-domainconsistency-report-for-classification.md) | ready for review |
+| [Operations declared](operations-declared.md) | ready for review |
+| [Link to get harmonised service metadata]([link to get harmonised service metadata.md) | ready for review |
 
 ## Open issues
 * It's not clear what is the relationship with IR18 to the other requirements handling mandatory SDS metadata elements using the SDS extended XML Schema (IR1, IR8, IR9, IR10): If the service metadata does not follow the extended SDS XML Schema, it's not possible to validate those requirements either.

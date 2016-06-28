@@ -26,12 +26,12 @@ Based on requirement numbering in [TG SDS](#ref_TG_SDS).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| 6      | Supported CRSes as a list | [Supported CRSes as list](Supported CRSes as list.md)| |
-| 7      | CRS identifiers | [Supported CRSes as list](Supported CRSes as list.md) | |
-| 8      | Indicate QoS for availability | [Extension for QoS declared availability](Extension for QoS declared availability.md) OR [DQ ConceptualConsistency for QoS declared availability](DQ ConceptualConsistency for QoS declared availability.md) | |
-| 9      | Indicate QoS for performance | [extension for QoS declared performance](extension for QoS declared performance.md) OR [DQ ConceptualConsistency for QoS declared.performance](DQ ConceptualConsistency for QoS declared.performance.md) | |
-| 10     | Indicate QoS for capacity |[extension for QoS declared capacity](.extension.for.QoS.declared.capacity.md) OR [DQ ConceptualConsistency for QoS declared capacity](DQ ConceptualConsistency for QoS declared capacity.md) | |
-| 11     | Provide "custodian" contact point | [.custodian.contact.point](.custodian.contact.point.md) | |
+| 6      | Supported CRSes as a list | [Supported CRSes as list](supported-crses-as-list.md)| |
+| 7      | CRS identifiers | [Supported CRSes as list](supported-crses-as-list.md) | |
+| 8      | Indicate QoS for availability | [Extension for QoS declared availability](extension-for-qos-declared-availability.md) or [dq conceptualconsistency for qos declared availability](dq-conceptualconsistency-for-qos-declared-availability.md) | |
+| 9      | Indicate QoS for performance | [Extension for QoS declared performance](extension-for-qos-declared-performance.md) or [dq conceptualconsistency for qos declared.performance](dq conceptualconsistency for qos declared.performance.md) | |
+| 10     | Indicate QoS for capacity |[Extension for QoS declared capacity](extension-for-qos-declared-capacity.md) or [dq conceptualconsistency for qos declared capacity](dq-conceptualconsistency-for-qos-declared-capacity.md) | |
+| 11     | Provide "custodian" contact point | [Custodian contact point](custodian-contact-point.md) | |
 | 12     | Constraints for access and use | not automatically testable |  |
 
 ## Tests
@@ -42,12 +42,12 @@ the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [Supported crses as list](Supported crses as list.md) | ready for review |
-| [Extension for QoS declared availability](Extension for QoS declared availability.md) | ready for review |
-| [extension for QoS declared performance](extension for QoS declared performance.md) | ready for review |
-| [extension for QoS declared capacity](extension for QoS declared capacity.md) | ready for review |
-| [Custodian contact point](Custodian contact point.md) | ready for review |
-| [SDS SV ServiceIdentification](SDS SV ServiceIdentification.md) | ready for review |
+| [Supported crses as list](supported-crses-as-list.md) | ready for review |
+| [Extension for QoS declared availability](extension-for-qos-declared-availability.md) | ready for review |
+| [Extension for QoS declared performance](extension-for-qos-declared-performance.md) | ready for review |
+| [Extension for QoS declared capacity](extension-for-qos-declared-capacity.md) | ready for review |
+| [Custodian contact point](custodian-contact-point.md) | ready for review |
+| [SDS SV ServiceIdentification](sds-sv-serviceidentification.md) | ready for review |
 
 ## Tests (MIWP-8 alternative)
 
@@ -58,12 +58,12 @@ the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [Supported crses as list](Supported crses as list.md) | ready for review |
-| [DQ ConceptualConsistency for QoS declared availability](DQ ConceptualConsistency for QoS declared availability.md) | ready for review |
-| [DQ ConceptualConsistency for QoS declared.performance](DQ ConceptualConsistency for QoS declared.performance.md) |ready for review |
-| [DQ ConceptualConsistency for QoS declared capacity](DQ ConceptualConsistency for QoS declared capacity.md) | ready for review |
-| [Custodian contact point](Custodian contact point.md) | ready for review |
-| [DQ DomainConsistency report for classification](DQ DomainConsistency report for classification.md) | ready for review |
+| [Supported crses as list](supported-crses-as-list.md) | ready for review |
+| [DQ ConceptualConsistency for QoS declared availability](dq-conceptualconsistency-for-qos-declared-availability.md) | ready for review |
+| [DQ ConceptualConsistency for QoS declared.performance](dq conceptualconsistency for qos declared.performance.md) |ready for review |
+| [DQ ConceptualConsistency for QoS declared capacity](dq-conceptualconsistency-for-qos-declared-capacity.md) | ready for review |
+| [Custodian contact point](custodian-contact-point.md) | ready for review |
+| [DQ DomainConsistency report for classification](dq-domainconsistency-report-for-classification.md) | ready for review |
 
 ## Open issues
 * The extension to the ISO 19119 metadata class ```SV_ServiceIdentification``` is defined twice in [TG SDS](#ref_TG_SDS): in Annex A just the ```category``` as a mandatory property is added, and in Annex C just the ```qualityOfService``` mandatory property is added. This means that the neither of these extended classes can be used to fulfill both the requirements IR 1 and IR 8, IR 9 or IR 10 at the same time.

@@ -26,11 +26,11 @@ Based on requirement numbering in [TG SDS](#ref_TG_SDS).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| 1      | Use the category element for classification | [SDS SV ServiceIdentification](SDS SV ServiceIdentification.md) OR [DQ DomainConsistency report for classification](DQ DomainConsistency report for classification.md)| |
-| 2      | All access points via Resource Locator | [At least one recource locator](At least one recource locator.md) | |
-| 3      | CI_OnlineFunctionCode to identify access points | [At least one recource locator](At least one recource locator.md)| |
+| 1      | Use the category element for classification | [SDS SV ServiceIdentification](sds-sv-serviceidentification.md) or [dq domainconsistency report for classification](dq-domainconsistency-report-for-classification.md)| |
+| 2      | All access points via Resource Locator | [At least one recource locator](at-least-one-recource-locator.md) | |
+| 3      | CI_OnlineFunctionCode to identify access points | [At least one recource locator](at-least-one-recource-locator.md)| |
 | 4      | Specification as human and/or machine readable | not automatically testable | |
-| 5      | Specification citing SDS must be given | [SDS specification cited](SDS specification cited.md) | |
+| 5      | Specification citing SDS must be given | [SDS specification cited](sds-specification-cited.md) | |
 
 ## Tests
 
@@ -38,9 +38,9 @@ The CC for the "TG Conformance Class 1: Implementation of Invocable Spatial Data
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [SDS SV ServiceIdentification](SDS SV ServiceIdentification.md) | ready for review |
-| [At least one recource locator](At least one recource locator.md) | ready for review |
-| [SDS specification cited](SDS specification cited.md) | ready for review |
+| [SDS SV ServiceIdentification](sds-sv-serviceidentification.md) | ready for review |
+| [At least one recource locator](at-least-one-recource-locator.md) | ready for review |
+| [SDS specification cited](sds-specification-cited.md) | ready for review |
 
 ## Tests (MIWP-8 alternative)
 
@@ -48,15 +48,15 @@ The CC for the "TG Conformance Class 1: Implementation of Invocable Spatial Data
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [DQ DomainConsistency report for classification](DQ DomainConsistency report for classification.md) | ready for review |
-| [At least one recource locator](At least one recource locator.md) | ready for review |
-| [SDS specification cited](SDS specification cited.md) | ready for review |
+| [DQ DomainConsistency report for classification](dq-domainconsistency-report-for-classification.md) | ready for review |
+| [At least one recource locator](at-least-one-recource-locator.md) | ready for review |
+| [SDS specification cited](sds-specification-cited.md) | ready for review |
 
 ## Open issues
 * There are no explicit requirements for Discoverable SDSes to comply with the requirements of [TG MD](#ref_TG_MD), even though it is mentioned at the end of text in chapter 4.2 "Metadata elements table" that "the metadata elements already detailed in [INS MD TG] are not repeated in this TG."
 * The XML Schema for the inspire_sds_gmd has not been published yet, so the XML Schema validation is not possible.
 * The codelist URL ```http://inspire.ec.europa.eu/draft-schemas/resources/Codelist/gmxCodelist.xml#INSPIRE_CI_OnLineFunctionCode``` does not look like a final one (refers to a non-existing resource under draft-schemas).The codelists and their value should point to the INSPIRE registry.
-* The test [SDS specification cited](SDS specification cited.md) cannot be automated unless either
+* The test [SDS specification cited](sds-specification-cited.md) cannot be automated unless either
   * the IR 5 is changed into requiring a ```xlink:href``` attribute to be used in ```gmd:specification``` to refer to specific version of [TG SDS](#ref_TG_SDS), or
   * the acceptable (localized) ```gco:CharacterString``` contents of the ```gmd:title``` pointing to the [TG SDS](#ref_TG_SDS) are explicitly defined.
 

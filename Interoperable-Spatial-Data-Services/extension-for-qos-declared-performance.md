@@ -1,4 +1,4 @@
-# extension for QoS declared performance
+# Extension for QoS declared performance
 
 **Purpose**: Declared Quality of Service level helps the users to rule out services tha do not fulfill their required QoS criteria.
 
