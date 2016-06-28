@@ -34,7 +34,7 @@ Based on requirement numbering in [TG SDS](#ref_TG_SDS).
 
 ## Tests
 
-The ATS for the "TG Conformance Class 1: Implementation of Invocable Spatial Data Services" contains all the tests in [ATS Metadata](https://github.com/inspire-eu-validation/ats-metadata) applicable to INSPIRE services, and additionally the following tests:
+The ATS for the "TG Conformance Class 1: Implementation of Invocable Spatial Data Services" contains all the tests in [ATS Metadata](http://inspire.ec.europa.eu/id/ats/metadata/3.1) applicable to INSPIRE services, and additionally the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
@@ -44,7 +44,7 @@ The ATS for the "TG Conformance Class 1: Implementation of Invocable Spatial Dat
 
 ## Tests (MIWP-8 alternative)
 
-The ATS for the "TG Conformance Class 1: Implementation of Invocable Spatial Data Services" according to the alternative option for SDS classification proposed by MIWP-8, contains all the tests in [ATS Metadata](https://github.com/inspire-eu-validation/ats-metadata) applicable to INSPIRE services, and additionally the following tests:
+The ATS for the "TG Conformance Class 1: Implementation of Invocable Spatial Data Services" according to the alternative option for SDS classification proposed by MIWP-8, contains all the tests in [ATS Metadata](http://inspire.ec.europa.eu/id/ats/metadata/3.1) applicable to INSPIRE services, and additionally the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
